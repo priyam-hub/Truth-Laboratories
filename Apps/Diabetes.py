@@ -281,7 +281,7 @@ def app():
                 st.write(f"- {food}")
 
     # Create a multiselect for all the plot options
-    selected_plots = st.multiselect("You can see all plots here👇",
+    selected_plots = st.multiselect("You can see all the Detailed Reports Here 👇",
                                     ["Naïve Bayes", "Decision Tree", "Logistic Regression",
                                      "Random Forest"], default=[],key="ms_D")
     if "ms_D" not in st.session_state:
