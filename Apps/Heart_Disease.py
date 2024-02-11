@@ -98,7 +98,7 @@ def app():
         st.subheader('Prediction of Naïve Bayes Classifier')
         NB_prediction = np.array([0, 1])
         if NB_prediction[prediction_NB] == 1:
-            st.write("<p style='font-size:20px;color: orange'><b>I am sorryy!! You are suffering from Heart Disease 😰</b></p>",
+            st.write("<p style='font-size:20px;color: red'><b>I am sorryy!! You are suffering from Heart Disease 😰</b></p>",
                      unsafe_allow_html=True)
         else:
             st.write("<p style='font-size:20px;color: green'><b>You are absolutely Fit 'n Fine 👍</b></p>", unsafe_allow_html=True)
@@ -146,7 +146,7 @@ def app():
         st.subheader('Prediction of Decision Tree Classifier')
         DT_prediction = np.array([0, 1])
         if DT_prediction[prediction_DT] == 1:
-            st.write("<p style='font-size:20px; color: orange'><b>I am sorryy!! You are suffering from Heart Disease 😰</b></p>",
+            st.write("<p style='font-size:20px; color: red'><b>I am sorryy!! You are suffering from Heart Disease 😰</b></p>",
                      unsafe_allow_html=True)
         else:
             st.write("<p style='font-size:20px;color: green'><b>You are absolutely Fit 'n Fine 👍</b></p>", unsafe_allow_html=True)
@@ -171,7 +171,7 @@ def app():
         st.subheader('Prediction of Logistic Regression')
         LR_prediction = np.array([0, 1])
         if LR_prediction[prediction_LR] == 1:
-            st.write("<p style='font-size:20px; color: orange'><b>I am sorryy!! You are suffering from Heart Disease 😰<b></p>",
+            st.write("<p style='font-size:20px; color: red'><b>I am sorryy!! You are suffering from Heart Disease 😰<b></p>",
                      unsafe_allow_html=True)
         else:
             st.write("<p style='font-size:20px;color: green'><b>You are absolutely Fit 'n Fine 👍</b></p>", unsafe_allow_html=True)
@@ -196,7 +196,7 @@ def app():
         st.subheader('Prediction of Random Forest')
         RF_prediction = np.array([0, 1])
         if RF_prediction[prediction_RF] == 1:
-            st.write("<p style='font-size:20px; color: orange'><b>I am sorryy!! You are suffering from Heart Disease 😰</b></p>",
+            st.write("<p style='font-size:20px; color: red'><b>I am sorryy!! You are suffering from Heart Disease 😰</b></p>",
                      unsafe_allow_html=True)
         else:
             st.write("<p style='font-size:20px;color: green'><b>You are absolutely Fit 'n Fine 👍</b></p>", unsafe_allow_html=True)
