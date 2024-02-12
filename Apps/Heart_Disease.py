@@ -233,7 +233,7 @@ def app():
         elif cmb.best_model == 'Random Forest':
             RF()
         else:
-            st.write("<p style='font-size:20px;color: green'><b>You are fine 👍You are absolutely Fit 'n Fine 👍</b></p>", unsafe_allow_html=True)
+            st.write("<p style='font-size:20px;color: green'><b>You are absolutely Fit 'n Fine 👍</b></p>", unsafe_allow_html=True)
 
     st.markdown("👈 Provide your input data in the sidebar")
     
