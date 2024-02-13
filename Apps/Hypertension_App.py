@@ -256,11 +256,13 @@ def app():
         with tab1:
             st.subheader("Advices of Our Consultancy:")
             management_tips = [
-                "Don't skip breakfast.",
-                "Cut down on caffeine.",
-                "Stop smoking.",
-                "Avoid being overweight, which forces the heart to work harder to pump blood around your body.",
-                "Men and women are advised not to drink regularly."
+                "1. **Monitor Blood Pressure:** Regularly check your Blood Pressure at home and keep a record to track changes. Consult to our Experts for personalized targets and guidance",
+                "2. **Adopt a healthy Diet:** Embrace a diet rich in fruits, vegetables, whole grains, lean proteins, and low fat-dairy products while limiting sodium, saturated fats, and added sugars. This can help lower blood pressure and reduce the risk of heart disease",
+                "3. **Maintain a Healthy Weight:** Achieve and maintain a healthy weight through regular physical activity and a balanced diet. Losing excess weight can significantly reduce blood pressure Levels.",
+                "4. **Exercise Regularly:** Engage in ,moderate-intensity aerobic exercise such as brisk walking, swimming or cycling for at least 150 minutes per week, or vigorous-intensity exercise for 75 minutes per week, combined with muscle-strengthening activities on two or more days per week",
+                "5. **Quit Smoking:** If you smoke, seek support to quit smoking as it not only increases blood pressure but also raises the risk of heart disease and stroke.",
+                "6. **Manage Stress:** Practice stress-reducing techniques such as deep breathing, meditation, yoga, or hobbies to help lower stress levels, which can contribute to elevated blood pressure",
+                "7. **Limit Alcohol Consumption:** If you choose to drink alcohol, do so in moderation, which means up to one drink per day for women and upto two drinks per day for men. Excessive alcohol consumption can raise blood pressure."
             ]
             for tip in management_tips:
                 st.write(f"- {tip}")
@@ -269,8 +271,11 @@ def app():
             c1, c2, c3 = st.columns([1, 1, 1], gap="small")
             with c1:
                 exercise_recommendation = [
-                    "Exercises for Lowering Blood Pressure:",
-                    "Taking regular exercise lowers blood pressure. Adults should do at least 150 minutes (2 hours and 30 minutes) of moderate-intensity aerobic activity, such as cycling or fast walking every week."
+                    "**Mountain Pose (Tadasana)**",
+                    "**Standing Forward Bend (Uttanasana)**",
+                    "**Seated Forward Pose (Paschimottanasana)**",
+                    "**Corpse Pose (Savasana)**",
+                    "**Legs up the Wall Pose (Viparita Karani)**"
                 ]
                 for tip in exercise_recommendation:
                     st.write(f"- {tip}")
@@ -288,10 +293,11 @@ def app():
         with tab3:
             st.subheader("Diet Control  Measures Recommended by our Experts:")
             dietary_recommendations = [
-                "Eat plenty of fruits and vegetables.",
-                "Eat more fish, including a portion of oily fish.",
-                "Cut down on saturated fat and sugar.",
-                "Eat less salt (no more than 6g a day for adults)."
+                "1. **DASH Diet:** Follow the Dietary Approaches to Stop Hypertension(DASH Diet), which emphasizes fruits, vegetables, whole grains, lean proteins, and low-fat dairy products. This diet is rich in minerals like Potassium, Calcium, and Magnesium, which help lower Blood Pressure",
+                "2. **High-Fibre Foods: Consume foods high in soluble fiber, such as oats, bran, lentils, beans, and fruits like apples and berries. Soluble fiber can help lower cholesterol levels and improve heart health, which is beneficial for managing hypertension. ** ",
+                "3. **Limit Sodium Intake: Reduce the consumption of high-sodium foods like processed snacks, canned soups, and fast food. Excessive sodium intake can increase blood pressure levels, so aim to consume less than 2,300 milligrams of sodium per day or even lower if possible. ** ",
+                "4. **Moderate Alcohol Consumption: Limit alcohol intake to moderate levels, which is defined as up to one drink per day for women and up to two drinks per day for men. Excessive alcohol consumption can raise blood pressure and interfere with hypertension management. **",
+                "5. **Healthy Fats: Choose heart-healthy fats like those found in avocados, olive oil, nuts, and seeds. These fats can help improve cholesterol levels and reduce the risk of cardiovascular diseases associated with hypertension.** "
             ]
             for tip in dietary_recommendations:
                 st.write(f"- {tip}")
