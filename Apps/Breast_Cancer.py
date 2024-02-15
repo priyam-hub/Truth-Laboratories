@@ -419,3 +419,4 @@ def app():
 
     # Remove the placeholder to display the list options
     placeholder.empty()
+    

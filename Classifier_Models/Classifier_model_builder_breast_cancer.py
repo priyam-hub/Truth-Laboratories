@@ -71,6 +71,7 @@ def plt_NB():
         classifier_report()
     with col2:
         st.pyplot()
+        
 
 
 
