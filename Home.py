@@ -84,6 +84,7 @@ hd.colored_header(
     color_name="violet-70",
 )
 
+
 # Add all your application here
 app.add_app("Breast Cancer Detector", Breast_Cancer.app)
 app.add_app("Diabetes Detector", Diabetes.app)
