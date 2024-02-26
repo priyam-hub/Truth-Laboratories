@@ -269,7 +269,7 @@ def app():
         predict_best_algorithm()
 
         # Tips, Diagnosis, Treatment, and Recommendations.
-        st.subheader("Opinions provided by Our Consultancy on Heart Disease 👨‍⚕️")
+        st.subheader("Opinions provided by Our Consultancy on Kidney Disease 👨‍⚕️")
         tab1, tab2, tab3 = st.tabs(["Advices", "Work-Out", "Diet"])
         with tab1:
             st.subheader("Advices of Our Consultancy:")
