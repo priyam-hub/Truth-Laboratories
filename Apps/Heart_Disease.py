@@ -320,27 +320,27 @@ def app():
 
     # Check the selected plots and call the corresponding plot functions
     if "Naïve Bayes" in selected_plots:
-        with st.spinner("Generating Naive Bayes...."):
+        with st.spinner("Generating Report of Naïve Bayes Classifier...."):
             cmb.plt_NB()
             time.sleep(1)
 
-    if "K-Nearest Neighbors" in selected_plots:
-        with st.spinner("Generating KNN...."):
-            cmb.plt_KNN()
-            time.sleep(1)
+    # if "K-Nearest Neighbors" in selected_plots:
+    #     with st.spinner("Generating KNN...."):
+    #         cmb.plt_KNN()
+    #         time.sleep(1)
 
     if "Decision Tree" in selected_plots:
-        with st.spinner("Generating Decision Tree...."):
+        with st.spinner("Generating Report of Decision Tree Classifier...."):
             cmb.plt_DT()
             time.sleep(1)
 
     if "Logistic Regression" in selected_plots:
-        with st.spinner("Generating Logistic Regression...."):
+        with st.spinner("Generating Report of Logistic Regression...."):
             cmb.plt_LR()
             time.sleep(1)
 
     if "Random Forest" in selected_plots:
-        with st.spinner("Generating Random Forest...."):
+        with st.spinner("Generating Report of Random Forest Algorithm...."):
             cmb.plt_RF()
             time.sleep(1)
 

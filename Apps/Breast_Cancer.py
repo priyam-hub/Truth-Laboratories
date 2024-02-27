@@ -192,7 +192,7 @@ def app():
         st.subheader('Prediction of Decision Tree Classifier')
         DT_prediction = np.array([0, 1])
         if DT_prediction[prediction_DT] == 1:
-            st.write("<p style='font-size:20px; color: orange'><b>I am Sorry!! You are suffering from Breast Cancer 😰</b></p>",
+            st.write("<p style='font-size:20px; color: red'><b>I am Sorry!! You are suffering from Breast Cancer 😰</b></p>",
                      unsafe_allow_html=True)
             st.markdown("""
                         ##### `Opps!! You got a Malignant Tumor!! Consult our Expert Opinion Now 😣`
@@ -223,7 +223,7 @@ def app():
         st.subheader('Prediction of Logistic Regression')
         LR_prediction = np.array([0, 1])
         if LR_prediction[prediction_LR] == 1:
-            st.write("<p style='font-size:20px; color: orange'><b>I am Sorry!! You are suffering from Breast Cancer 😰</b></p>",
+            st.write("<p style='font-size:20px; color: red'><b>I am Sorry!! You are suffering from Breast Cancer 😰</b></p>",
                      unsafe_allow_html=True)
             st.markdown("""
                         ##### `Opps!! You got a Malignant Tumor!! Consult our Expert Opinion Now 😣`
@@ -254,7 +254,7 @@ def app():
         st.subheader('Prediction by Random Forest Algorithm')
         RF_prediction = np.array([0, 1])
         if RF_prediction[prediction_RF] == 1:
-            st.write("<p style='font-size:20px; color: orange'><b>I am Sorry!! You are suffering from Breast Cancer 😰</b></p>",
+            st.write("<p style='font-size:20px; color: red'><b>I am Sorry!! You are suffering from Breast Cancer 😰</b></p>",
                      unsafe_allow_html=True)
             st.markdown("""
                         ##### `Opps!! You got a Malignant Tumor!! Consult our Expert Opinion Now 😣`
@@ -393,7 +393,7 @@ def app():
 
     # Check the selected plots and call the corresponding plot functions
     if "Naïve Bayes" in selected_plots:
-        with st.spinner("Generating Report of Naive Bayes Classifier ...."):
+        with st.spinner("Generating Report of Naïve Bayes Classifier ...."):
             cmb.plt_NB()
             time.sleep(1)
 
