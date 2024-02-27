@@ -1,7 +1,7 @@
 import streamlit as st  # pip install streamlit
 
 st.set_page_config(
-    page_title="Contact",
+    page_title="KEEP IN TOUCH",
     page_icon="✉️",
     layout="wide"
 )

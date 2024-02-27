@@ -5,7 +5,7 @@ from res import functions
 from streamlit_extras.switch_page_button import switch_page
 
 st.set_page_config(
-    page_title="Records",
+    page_title="RECORDS",
     page_icon="📚",
     layout="wide"
 )

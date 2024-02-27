@@ -35,7 +35,7 @@ def openai_create(prompt):
 
 
 st.set_page_config(
-    page_title="Diagnosis_Assistant",
+    page_title="EXPERT OPINION",
     page_icon="🏥",
     layout="wide"
 )
