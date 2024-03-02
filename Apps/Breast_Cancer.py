@@ -306,7 +306,7 @@ def app():
     st.markdown("👈 Provide your input data in the sidebar")
     
     # Displays the user input features
-    with st.expander("Reports", expanded=False):
+    with st.expander("Prediction Results", expanded=False):
         # Display the input dataframe
         st.write("Your input values are shown below:")
         st.dataframe(input_df)
@@ -372,7 +372,24 @@ def app():
             st.write("Treatment decisions are based on factors like cancer stage, grade, overall health, and menopause status.")
             st.write("You can discuss your treatment options with your healthcare team and ask questions at any time.")
 
-
+    with st.expander("Comparison Study", expanded=False):
+    
+        col1, col2 = st.columns(2)
+        with col1:
+            st.header("Naïve Bayes Classifier")
+            cmb.CR_NB()
+        with col2:
+            st.header("Decision Tree Classifier")
+            cmb.CR_DT()
+    
+        col3, col4 = st.columns(2)
+        with col3:
+            st.header("Logistic Regression Algorithm")
+            cmb.CR_LR()
+        with col4:
+            st.header("Random Forest Algorithm")
+            cmb.CR_RF()
+    
     # Create a multiselect for all the plot options
     selected_plots = st.multiselect("You can see all the Detailed Reports Here 👇",
                                     ["Naïve Bayes", "Decision Tree", "Logistic Regression", "Random Forest"], default=[],key="ms_B")

@@ -75,6 +75,13 @@ def plt_NB():
         classifier_report()
     with col2:
         st.pyplot()
+        
+def CR_NB():
+        report_df = pd.DataFrame(nb_classifier_report_dict).transpose()
+        # Display the classification report as a table using st.write()
+        st.write("Naive Bayes Classifier Report")
+        st.write(report_df)
+        st.write()
 
 
 # """________KNN Algorithm________"""
@@ -164,6 +171,13 @@ def plt_DT():
         classifier_report()
     with col2:
         st.pyplot()
+        
+def CR_DT():
+        report_df = pd.DataFrame(dt_classifier_report_dict).transpose()
+        # Display the classification report as a table using st.write()
+        st.write("Decision Tree Classifier Report")
+        st.write(report_df)
+        st.write()
 
 
 """________Logistic Regression Algorithm________"""
@@ -209,6 +223,13 @@ def plt_LR():
         classifier_report()
     with col2:
         st.pyplot()
+        
+def CR_LR():
+        report_df = pd.DataFrame(lr_classifier_report_dict).transpose()
+        # Display the classification report as a table using st.write()
+        st.write("Logistic Regression Classifier Report")
+        st.write(report_df)
+        st.write()
 
 
 """________Random Forest Algorithm________"""
@@ -254,6 +275,13 @@ def plt_RF():
         classifier_report()
     with col2:
         st.pyplot()
+        
+def CR_RF():
+        report_df = pd.DataFrame(rf_classifier_report_dict).transpose()
+        # Display the classification report as a table using st.write()
+        st.write("Random Forest Classifier Report")
+        st.write(report_df)
+        st.write()
 
 
 # Compare the 5 models and select the best algorithm
